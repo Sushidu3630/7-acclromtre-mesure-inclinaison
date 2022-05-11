@@ -7,7 +7,7 @@ basic.forever(function () {
             . . # . .
             . . # . .
             `)
-    } else if (input.acceleration(Dimension.X) < 100) {
+    } else if (input.acceleration(Dimension.X) > 100) {
         basic.showLeds(`
             . . # . .
             . . # . .

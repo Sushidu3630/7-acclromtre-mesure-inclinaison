@@ -1,5 +1,5 @@
 basic.forever(function () {
-    if (input.acceleration(Dimension.X) < -100) {
+    if (input.acceleration(Dimension.Y) < -100) {
         basic.showLeds(`
             . . # . .
             . . # . .
@@ -7,12 +7,28 @@ basic.forever(function () {
             . # # # .
             . . # . .
             `)
-    } else if (input.acceleration(Dimension.X) < 100) {
+    } else if (input.acceleration(Dimension.Y) < 100) {
         basic.showLeds(`
             . . # . .
             . # # # .
             # . # . #
             . . # . .
+            . . # . .
+            `)
+    } else if (input.acceleration(Dimension.X) < -100) {
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            # # # # #
+            . # . . .
+            . . # . .
+            `)
+    } else if (input.acceleration(Dimension.X) < -100) {
+        basic.showLeds(`
+            . . # . .
+            . . . # .
+            # # # # #
+            . . . # .
             . . # . .
             `)
     } else {
